@@ -17,10 +17,6 @@ describe("TS1:Add Practice", () => {
   });
 
   it("TC1: Add Practice", () => {
-    // Get and log the current URL
-    cy.url().then((url) => {
-      cy.log(url);
-    });
     // cy.xpath("//div[@fxlayout='row']//div[1]//button[1]").click()
     cy.xpath("//div[@fxlayout='row']//div[1]//button[1]").first().click();
     cy.xpath("(//span[contains(text(),'Users')])[2]").click();
