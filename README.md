@@ -1,8 +1,8 @@
 <!--  Basic cypress commands
       * npx cypress open = to open cypress with head
       * npx cypress run = to open cypress headless
-      * npx cypress run --headed = to open cypress headless through Command Prompt / Terminal
-      * npx cypress run --spec cypress\e2e\firstTestCase.cy.js = to open cypress with specific file through Command Prompt / Terminal
+      * npx cypress run --headed = to open cypress headed through Command Prompt / Terminal
+      * npx cypress run --spec cypress\e2e\firstTestCase.cy.js = to open cypress headless with specific file through Command Prompt / Terminal
       * npx cypress run --browser chrome = to open cypress in specif browser headless through Command Prompt / Terminal
       * npx cypress run --browser chrome --headed = to open cypress in specific browser headed through Command Prompt / Terminal
       Example:
