@@ -1,0 +1,115 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-07-23T12:42:04.045Z",
+    "end": "2023-07-23T12:42:06.095Z",
+    "duration": 2050,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ea56c26e-301a-485f-84d9-2ea2e3fee670",
+      "title": "",
+      "fullFile": "cypress\\e2e\\rpm\\add_practice.cy.ts",
+      "file": "cypress\\e2e\\rpm\\add_practice.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e6d4b7f5-e065-4b53-89c3-75b610793b87",
+          "title": "Test Suite 1: Add Practice",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test Case 1: Add Practice",
+              "fullTitle": "Test Suite 1: Add Practice Test Case 1: Add Practice",
+              "timedOut": null,
+              "duration": 1769,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n    \"value\": \"cypress\\\\e2e\\\\rpm\\\\add_practice.cy.ts\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\rpm\\\\add_practice.cy.ts\\\\Test Suite 1 Add Practice -- Test Case 1 Add Practice -- before each hook (failed).png\"\n      ]\n    ]\n  }\n]",
+              "code": "cy.xpath(\"(//span[contains(text(),'Users')])[1]\")\n    .should(\"be.visible\")\n    .trigger(\"mouseover\", { force: true }); // hover over Users menu button with force option\n// .click({ force: true }); // click the toggle button with force option\ncy.xpath(\"(//span[contains(text(),'Practice')])[1]\").click();\ncy.xpath(\"(//mat-icon[normalize-space()='add'])[1]\")\n    .should(\"be.visible\")\n    .click();\ncy.get(\"[data-cy='practice-name-input']\").clear().type(\"Bilal test\");\ncy.get(\"[data-cy='email-input']\").clear().type(\"bilal@test.com\");\ncy.get(\"[data-cy='telephone-input']\").clear().type(\"923001000000\");\ncy.get(\"[data-cy='fax-input']\").clear().type(\"123131332\");\ncy.get(\"[data-cy='address-input']\").clear().type(\"NSTP\");\ncy.get(\"[data-cy='city-input']\").clear().type(\"Islamabad\");\ncy.get(\"[data-cy='postal-code-input']\").clear().type(\"79872\");\ncy.get(\"[data-cy='state-input']\").clear().type(\"Islamabad\");\ncy.get(\"[data-cy='save-close-button\").click();",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:4200/setup/user/patients\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:4200\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Test Suite 1: Add Practice`",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:4200/setup/user/patients\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:4200\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Test Suite 1: Add Practice`\n    at <unknown> (http://localhost:57011/__cypress/runner/cypress_runner.js:147859:82)\n    at visitFailedByErr (http://localhost:57011/__cypress/runner/cypress_runner.js:147251:12)\n    at <unknown> (http://localhost:57011/__cypress/runner/cypress_runner.js:147858:11)\n    at tryCatcher (http://localhost:57011/__cypress/runner/cypress_runner.js:18744:23)\n    at Promise._settlePromiseFromHandler (http://localhost:57011/__cypress/runner/cypress_runner.js:16679:31)\n    at Promise._settlePromise (http://localhost:57011/__cypress/runner/cypress_runner.js:16736:18)\n    at Promise._settlePromise0 (http://localhost:57011/__cypress/runner/cypress_runner.js:16781:10)\n    at Promise._settlePromises (http://localhost:57011/__cypress/runner/cypress_runner.js:16857:18)\n    at _drainQueueStep (http://localhost:57011/__cypress/runner/cypress_runner.js:13451:12)\n    at _drainQueue (http://localhost:57011/__cypress/runner/cypress_runner.js:13444:9)\n    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:57011/__cypress/runner/cypress_runner.js:13460:5)\n    at Async.drainQueues (http://localhost:57011/__cypress/runner/cypress_runner.js:13330:14)\nFrom Your Spec Code:\n    at Context.eval (webpack:///./cypress/e2e/rpm/add_practice.cy.ts:4:0)\n\nFrom Node.js Internals:\n  Error: connect ECONNREFUSED 127.0.0.1:4200\n      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1187:16)",
+                "diff": null
+              },
+              "uuid": "b05c695f-784a-403a-92b1-2696439398b5",
+              "parentUUID": "e6d4b7f5-e065-4b53-89c3-75b610793b87",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "b05c695f-784a-403a-92b1-2696439398b5"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1769,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "reportPageTitle": "custom-title",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "saveAllAttempts": false,
+        "videoOnFailOnly": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

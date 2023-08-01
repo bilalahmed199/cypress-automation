@@ -1,0 +1,154 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 2,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-07-23T12:40:19.322Z",
+    "end": "2023-07-23T12:40:54.171Z",
+    "duration": 34849,
+    "testsRegistered": 3,
+    "passPercent": 66.66666666666666,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "aa0ba35b-cd0f-46fb-b121-fdf841742c76",
+      "title": "",
+      "fullFile": "cypress\\e2e\\firstTestCase.cy.ts",
+      "file": "cypress\\e2e\\firstTestCase.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3a53f027-6eb9-481a-9e90-ddab7a996bf3",
+          "title": "Test Suite Name",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test Case 1",
+              "fullTitle": "Test Suite Name Test Case 1",
+              "timedOut": null,
+              "duration": 1447,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\firstTestCase.cy.ts\"\n}",
+              "code": "cy.visit('https://example.cypress.io');",
+              "err": {},
+              "uuid": "d2f17d14-f7ac-412c-9c92-66bd9f4efd0a",
+              "parentUUID": "3a53f027-6eb9-481a-9e90-ddab7a996bf3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test Case 2 - verify valid title of webpage",
+              "fullTitle": "Test Suite Name Test Case 2 - verify valid title of webpage",
+              "timedOut": null,
+              "duration": 9152,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\firstTestCase.cy.ts\"\n}",
+              "code": "cy.visit('https://opensource-demo.orangehrmlive.com/');\ncy.title().should('eq', 'OrangeHRM');",
+              "err": {},
+              "uuid": "4225f1d4-4b52-4425-b5c3-79274b1a713a",
+              "parentUUID": "3a53f027-6eb9-481a-9e90-ddab7a996bf3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test Case 3 - verify invalid title of webpage",
+              "fullTitle": "Test Suite Name Test Case 3 - verify invalid title of webpage",
+              "timedOut": null,
+              "duration": 12238,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n    \"value\": \"cypress\\\\e2e\\\\firstTestCase.cy.ts\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\firstTestCase.cy.ts\\\\Test Suite Name -- Test Case 3 - verify invalid title of webpage (failed).png\"\n      ]\n    ]\n  }\n]",
+              "code": "cy.visit('https://opensource-demo.orangehrmlive.com/');\ncy.title().should('eq', 'OrangeHRMm'); // wrong title",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: expected 'OrangeHRM' to equal 'OrangeHRMm'",
+                "estack": "AssertionError: Timed out retrying after 10000ms: expected 'OrangeHRM' to equal 'OrangeHRMm'\n    at Context.eval (webpack:///./cypress/e2e/firstTestCase.cy.ts:11:0)",
+                "diff": "- 'OrangeHRM'\n+ 'OrangeHRMm'\n"
+              },
+              "uuid": "9d63348c-77a2-4a29-8728-e8e0ca97e820",
+              "parentUUID": "3a53f027-6eb9-481a-9e90-ddab7a996bf3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d2f17d14-f7ac-412c-9c92-66bd9f4efd0a",
+            "4225f1d4-4b52-4425-b5c3-79274b1a713a"
+          ],
+          "failures": [
+            "9d63348c-77a2-4a29-8728-e8e0ca97e820"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 22837,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "reportPageTitle": "custom-title",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "saveAllAttempts": false,
+        "videoOnFailOnly": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

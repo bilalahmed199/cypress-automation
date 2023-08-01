@@ -1,0 +1,130 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-07-23T12:41:08.099Z",
+    "end": "2023-07-23T12:41:39.410Z",
+    "duration": 31311,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b9888ef0-43c8-45da-8aa0-481e6321b7d8",
+      "title": "",
+      "fullFile": "cypress\\e2e\\locators.cy.ts",
+      "file": "cypress\\e2e\\locators.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1cae4a19-492a-4381-961c-31f22df8d011",
+          "title": "Test Suite 1",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "TC1: Verify title of page",
+              "fullTitle": "Test Suite 1 TC1: Verify title of page",
+              "timedOut": null,
+              "duration": 17053,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\locators.cy.ts\"\n}",
+              "code": "cy.title().should(\"eq\", \"OrangeHRM\");",
+              "err": {},
+              "uuid": "ba9ce4e9-0bba-4859-a6c5-bb9ca44b72d9",
+              "parentUUID": "1cae4a19-492a-4381-961c-31f22df8d011",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC2: find an element in Quick Launch Grid",
+              "fullTitle": "Test Suite 1 TC2: find an element in Quick Launch Grid",
+              "timedOut": null,
+              "duration": 8392,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\locators.cy.ts\"\n}",
+              "code": "// Wait for the grid to be visible\nlet quick_launch_grid = cy.get(\".oxd-grid-3.orangehrm-quick-launch\");\nquick_launch_grid.should(\"be.visible\");\n// when the grid is found, then find inside elements of div\nquick_launch_grid.then(() => {\n    quick_launch_grid.find(\".oxd-grid-item\").should(\"contain\", \"Apply Leave\");\n});",
+              "err": {},
+              "uuid": "87348a8f-8cc1-4af5-bd3e-fc2f1c958f89",
+              "parentUUID": "1cae4a19-492a-4381-961c-31f22df8d011",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ba9ce4e9-0bba-4859-a6c5-bb9ca44b72d9",
+            "87348a8f-8cc1-4af5-bd3e-fc2f1c958f89"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 25445,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "reportPageTitle": "custom-title",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "saveAllAttempts": false,
+        "videoOnFailOnly": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

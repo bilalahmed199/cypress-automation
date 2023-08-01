@@ -1,0 +1,28 @@
+{
+  "include": [
+    "../../node_modules/cypress",
+    "**/*.ts"
+  ],
+  "compileOnSave": true,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": false,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "module": "es2020",
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "es2020",
+    "lib": ["es2018", "dom"],
+    "paths": {
+      "charms-lib": ["projects/charms-lib/src/public-api"]
+    },
+    "types": ["cypress", "node"]
+  },
+  "angularCompilerOptions": {
+    "fullTemplateTypeCheck": true,
+    "strictInjectionParameters": true
+  }
+}

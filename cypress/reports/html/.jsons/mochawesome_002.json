@@ -1,0 +1,149 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-07-23T12:39:56.021Z",
+    "end": "2023-07-23T12:40:08.167Z",
+    "duration": 12146,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4fa19928-5a21-4902-9366-57d982fb1745",
+      "title": "",
+      "fullFile": "cypress\\e2e\\assertions_implicit.cy.ts",
+      "file": "cypress\\e2e\\assertions_implicit.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7ec0f8cd-1e7d-47b7-94e5-91b959b58830",
+          "title": "Test Suite 1: Implicit Assertions",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test Case 1: Assert URL",
+              "fullTitle": "Test Suite 1: Implicit Assertions Test Case 1: Assert URL",
+              "timedOut": null,
+              "duration": 3835,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\assertions_implicit.cy.ts\"\n}",
+              "code": "// cy.url() contains current URL\ncy.url()\n    .should(\"eq\", \"https://charms-qa.cognitivehealthintl.com/Authorize/\") // exact match\n    .and(\"include\", \"Authorize/\") // 'include'\n    .and(\"contain\", \"charms-qa\") // contain\n    .and(\"not.contain\", \"AKU\"); // not contain",
+              "err": {},
+              "uuid": "67246cce-0796-4b45-8c6d-8e1e16812a44",
+              "parentUUID": "7ec0f8cd-1e7d-47b7-94e5-91b959b58830",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test Case 2: Assert title",
+              "fullTitle": "Test Suite 1: Implicit Assertions Test Case 2: Assert title",
+              "timedOut": null,
+              "duration": 1496,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\assertions_implicit.cy.ts\"\n}",
+              "code": "cy.title()\n    .should(\"eq\", \"CHI | Login\")\n    .and(\"contain\", \"CHI\")\n    .and(\"not.contain\", \"Logout\");",
+              "err": {},
+              "uuid": "381c4eea-faad-4e0b-bbb8-f664f65fa977",
+              "parentUUID": "7ec0f8cd-1e7d-47b7-94e5-91b959b58830",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test Case 3: Assert specific element found or not",
+              "fullTitle": "Test Suite 1: Implicit Assertions Test Case 3: Assert specific element found or not",
+              "timedOut": null,
+              "duration": 1754,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\assertions_implicit.cy.ts\"\n}",
+              "code": "cy.xpath(\"//img[@alt='image']\").should(\"be.visible\");\ncy.get(\"[name='username']\").should(\"not.have.value\");",
+              "err": {},
+              "uuid": "c3c87aa9-5bca-4d87-9cd8-51033a786524",
+              "parentUUID": "7ec0f8cd-1e7d-47b7-94e5-91b959b58830",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "67246cce-0796-4b45-8c6d-8e1e16812a44",
+            "381c4eea-faad-4e0b-bbb8-f664f65fa977",
+            "c3c87aa9-5bca-4d87-9cd8-51033a786524"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7085,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "reportPageTitle": "custom-title",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "saveAllAttempts": false,
+        "videoOnFailOnly": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

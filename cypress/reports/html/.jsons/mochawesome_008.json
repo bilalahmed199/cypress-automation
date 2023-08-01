@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-07-23T12:42:14.830Z",
+    "end": "2023-07-23T12:42:39.792Z",
+    "duration": 24962,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b30a7489-5fa1-4189-9827-63c42efed219",
+      "title": "",
+      "fullFile": "cypress\\e2e\\testCases\\test_login.cy.ts",
+      "file": "cypress\\e2e\\testCases\\test_login.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "849cc0e3-55f6-49f5-aaee-ad02702f1d9b",
+          "title": "All Login test cases",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "TC1: Login with valid credentials",
+              "fullTitle": "All Login test cases TC1: Login with valid credentials",
+              "timedOut": null,
+              "duration": 19964,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\testCases\\\\test_login.cy.ts\"\n}",
+              "code": "lp.enterUsername(\"Admin\");\nlp.enterPassword(\"admin123\");\nlp.clickLogin();\ncy.title().should(\"eq\", \"OrangeHRM\");",
+              "err": {},
+              "uuid": "d2b45896-2fc6-40b6-a4ac-6bf90777c699",
+              "parentUUID": "849cc0e3-55f6-49f5-aaee-ad02702f1d9b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d2b45896-2fc6-40b6-a4ac-6bf90777c699"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 19964,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "reportPageTitle": "custom-title",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "saveAllAttempts": false,
+        "videoOnFailOnly": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
